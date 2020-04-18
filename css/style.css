@@ -1,0 +1,460 @@
+/*
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans.eot');
+    src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans.woff2') format('woff2'),
+    url('../fonts/OpenSans.woff') format('woff'),
+    url('../fonts/OpenSans.ttf') format('truetype'),
+    url('../fonts/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.woff2') format('woff2'),
+    url('../fonts/Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
+    url('../fonts/Raleway-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Medium.woff2') format('woff2'),
+    url('../fonts/Raleway-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+    url('../fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+} */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*non-underlied links*/
+body {
+}
+
+header {
+    background-color: #24282f;
+    padding-top: 30px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* код Артема*/
+
+header nav li {
+    display: inline-block;
+    margin-left: 28px;
+}
+
+header nav li:after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #b5a263;
+    transition: 0.5s;
+}
+
+header nav li:hover:after, header nav li.active:after {
+    width: 100%;
+}
+
+header nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 11px 32px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/*_______________*/
+
+header .logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+.container:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.under_header {
+    background-image: url("../images/background_01.jpg");
+    padding-top: 70px;
+    padding-bottom: 80px;
+    margin-bottom: 120px;
+}
+
+.under_header div {
+    max-width: 1100px;
+    margin: auto;
+}
+
+section div h1 {
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+
+}
+
+section div p {
+    font-size: 11px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main_content {
+    padding-bottom: 28px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.main_content h2 {
+    text-transform: uppercase;
+    font-size: 19px;
+    color: #24282f;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.main_content h2:after {
+    content: "";
+    display: block;
+    width: 62px;
+    height: 3px;
+    background-color: #b5a263;
+    margin: 30px auto;
+}
+
+
+.man1, .man2, .man3 {
+    display: inline-block;
+    margin-bottom: 35px;
+}
+
+.man1, .man2 {
+    margin-right: 75px;
+}
+
+.profiles img {
+    padding-bottom: 20px;
+}
+
+.name {
+    font-size: 13px;
+    color: #232323;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: left;
+
+
+}
+
+.position {
+    font-size: 11px;
+    color: #b5a263;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.social_links li {
+    display: inline-block;
+}
+
+.social_links a{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-color: #dedede;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    color: white;
+}
+
+
+.social_links ul {
+    margin-right: 5px;
+}
+
+.name_position {
+    float: left;
+}
+
+.social_links {
+    float: right;
+}
+
+
+.social_links:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+/*?????*/
+.show_all {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 35px;
+    width: 140px;
+    font-size: 13px;
+    color: #24282f;
+    text-transform: uppercase;
+    border: #7c7e82 solid 1px;
+    border-radius: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.feedback {
+    background-color: #f7f7f7;
+}
+
+.feedback div {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 90px;
+}
+
+.feedback div h4 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 19px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
+}
+
+.feedback div h4:after {
+    content: "";
+    display: block;
+    width: 62px;
+    height: 2px;
+    background-color: #3a242a;
+    margin: 22px auto 55px;
+}
+
+.feedback div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+.feedback div p {
+    text-align: center;
+}
+
+.feedback div .text {
+    font-size: 11px;
+    color: #000000;
+    margin-bottom: 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+
+}
+
+.feedback div .person {
+    font-size: 13px;
+    color: #b5a263;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+.feedback div .job {
+    font-size: 11px;
+    color: #000000;
+    padding-bottom: 95px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.before_footer {
+    background-color: #2b2f35;
+    border-bottom: solid 1.5px #42464c;
+}
+
+.before_footer article {
+    max-width: 900px;
+    margin: auto;
+
+}
+
+.before_footer article div {
+    display: inline-block;
+    padding-top: 60px;
+    float: left;
+
+}
+
+.before_footer:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.left_block {
+    width: 235px;
+    margin-right: 131px;
+}
+
+.middle_block {
+    width: 145px;
+    margin-right: 131px;
+}
+
+.left_block .title, .middle_block .title, .right_block .title {
+    font-size: 11px;
+    color: #b5a263;
+    text-transform: uppercase;
+    padding-bottom: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.left_block .below_title, .middle_block .below_title {
+    font-size: 11px;
+    color: #6e7279;
+    padding-bottom: 55px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.right_block {
+    max-width: 237px;
+ }
+
+form input {
+    width: 100%;
+    color: #6e7279;
+    font-size: 11px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #2b2f35;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form button {
+    width: 100%;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 10px 65px;
+    text-transform: uppercase;
+    background: #b5a263;
+    border: solid 1px #b5a263;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+form input::placeholder {
+    background-color: #2b2f35;
+}
+
+footer {
+    background-color: #24282f;
+}
+
+footer div {
+    max-width: 900px;
+    margin: auto;
+}
+
+footer div p {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 9px;
+    color: #6e7279;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+footer div ul {
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+footer div ul li {
+    display: inline-block;
+}
+
+footer div ul li a {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 28px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: transparent;
+    border: 1px solid #6e7279;
+    border-radius: 50%;
+    color: #6e7279;
+}
+
+footer div ul li a:hover{
+    background-color: #b5a263;
+    border: 1px solid #b5a263;
+}
+footer div ul li a:hover i {
+    color: white;
+}
+
+footer div p {
+    float: left;
+}
+
+footer div ul {
+    float: right;
+}
+
+div:after {
+    clear: both;
+    content: "";
+    display: block;
+}
